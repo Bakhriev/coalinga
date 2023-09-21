@@ -1,20 +1,10 @@
-## Использование Gulp 4 Usage of Gulp 4
+<p align="left">
+</p>
 
-## Начало работы Getting Started
+<h3 align="left">Languages and Tools:</h3>
+<p align="left">  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a>
+<a href="https://gulpjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg" alt="gulp" width="40" height="40"/> </a> <a href="https://webpack.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="webpack" width="40" height="40"/> </a> </p>
 
-Для запуска проекта установите зависимости с помощью npm или yarn: <br>
-To start the project, install the dependencies using npm or yarn:
+<h3 align="left">Methodology BEM</h3>
 
-npm install <br>
-npm run dev
-
-или <br> or
-
-yarn <br>
-yarn dev
-
-## SVG спрайт SVG Sprite
-
-<svg>
-    <use xlink:href="assets/img/svg/sprite.svg#arrow"></use>
-</svg>
+<h3 align="left"><a href="https://ephemeral-pothos-3c3416.netlify.app/">Live Preview</a></h3>
