@@ -19,4 +19,29 @@
 
 </symbol>
 
+		<symbol id='calendar-icon' fill='none'>
+
+		<path d="M4.3121 7.34043H12.6242M4.3121 10.6596H8.48408M4.3121 1.5V3.15957M12.6561 1.5V3.15957M3.67516 16.5H13.3248C14.2484 16.5 14.7261 16.5 15.0764 16.3085C15.3949 16.1489 15.6497 15.8936 15.8089 15.5745C16 15.2234 16 14.7447 16 13.8191V5.84043C16 4.91489 16 4.43617 15.8089 4.08511C15.6497 3.76596 15.3949 3.51064 15.0764 3.35106C14.7261 3.15957 14.2484 3.15957 13.3248 3.15957H3.67516C2.75159 3.15957 2.27389 3.15957 1.92357 3.35106C1.6051 3.51064 1.35032 3.76596 1.19108 4.08511C1 4.43617 1 4.91489 1 5.84043V13.8511C1 14.7766 1 15.2553 1.19108 15.6064C1.35032 15.9255 1.6051 16.1809 1.92357 16.3404C2.27389 16.5 2.71975 16.5 3.67516 16.5Z" stroke="#A2ABD5" stroke-width="1.5" stroke-miterlimit="133.333" stroke-linecap="round" stroke-linejoin="round"/>
+
+		</symbol>
+
+		<symbol id='arrow-left' fill='none'>
+				<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+				<g
+					id="SVGRepo_tracerCarrier"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				></g>
+				<g id="SVGRepo_iconCarrier">
+					<path
+						d="M15 7L10 12L15 17"
+						stroke="#fff"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					></path>
+				</g>
+
+
 </svg>
+

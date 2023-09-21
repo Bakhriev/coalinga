@@ -39,6 +39,7 @@
 		"preview": "gulp preview"
 	},
 	"dependencies": {
-		"motion": "^10.16.2"
+		"motion": "^10.16.2",
+		"swiper": "^10.3.0"
 	}
 }

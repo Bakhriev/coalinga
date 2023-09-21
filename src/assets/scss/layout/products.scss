@@ -1,0 +1,146 @@
+.products {
+	padding-top: 73px;
+
+	&__top {
+		margin-bottom: 30px;
+		display: flex;
+		justify-content: space-between;
+		gap: 20px;
+		flex-wrap: wrap;
+	}
+
+	// .products__title
+	&__title {
+		color: $blue;
+		font-family: 'Lexend', serif;
+		font-size: 26px;
+		font-weight: 500;
+		line-height: normal;
+	}
+
+	// .products__btns
+
+	&__btns {
+		flex-shrink: 0;
+		width: 100px;
+		height: 38px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		overflow: hidden;
+		background-color: $blue;
+		border-radius: 100px;
+	}
+
+	// .products__btn
+
+	&__btn {
+		display: grid;
+		place-items: center;
+		border-radius: 100px;
+		transition: background-color 150ms ease-in-out;
+		@include hover {
+			background-color: #1c3ad2;
+		}
+		&:active {
+			scale: 0.87;
+			background-color: #1c3ad2;
+		}
+	}
+
+	// .products__btn-icon
+
+	&__btn-icon {
+		width: 24px;
+		height: 24px;
+		&_rotated {
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.products-card {
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 15px;
+	border: 1px solid #ecf2fc;
+	background: #fff;
+	max-width: 260px;
+
+	// .products-card__img
+
+	&__img {
+		margin-bottom: 12px;
+		width: 200px;
+		height: 200px;
+	}
+
+	// .products-card__title
+
+	&__title {
+		margin-bottom: 7px;
+		color: $blue;
+		text-shadow: 0px 0px 11px rgba(0, 0, 0, 0.08);
+		font-family: 'Lexend', serif;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: normal;
+		text-transform: uppercase;
+	}
+
+	// .products-card__subtitle
+
+	&__subtitle {
+		margin-bottom: 18px;
+		color: #000;
+		font-family: 'Lexend', serif;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 160%; /* 24px */
+	}
+
+	// .products-card__price
+
+	&__price {
+		margin-bottom: 12px;
+		color: $red;
+		font-family: 'Lexend', serif;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		color: rgba(242, 23, 55, 0.5);
+		span {
+			color: $red;
+			opacity: 1;
+			font-size: 20px;
+			font-weight: 500;
+			color: $red;
+		}
+	}
+
+	// .products-card__link
+
+	&__link {
+		border-radius: 5px;
+		background-color: rgba(29, 49, 150, 0.1);
+		transition: background-color 150ms ease-in-out;
+		@include hover {
+			background-color: rgba(29, 49, 150, 0.3);
+		}
+		&:active {
+			scale: 0.97;
+		}
+		display: grid;
+		place-items: center;
+		padding: 15px 20px;
+
+		color: #2a41b6;
+		text-align: center;
+		font-family: 'Lexend', serif;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: normal;
+	}
+}

@@ -16,7 +16,20 @@
 
 			@include('assets/layout/header.html')
 
-			<main class="main">@include('assets/layout/hero.html')</main>
+			<main class="main">
+				@include('assets/layout/hero.html')
+				@include('assets/layout/experience.html')
+				<div class="items-wrap container">
+					<div class="items-wrap__left">
+						@include('assets/layout/about.html')
+						@include('assets/layout/products.html')
+					</div>
+					<div class="items-wrap__right">
+						@include('assets/layout/news.html')
+						@include('assets/layout/categories.html')
+					</div>
+				</div>
+			</main>
 
 			<!-- Footer -->
 			@include('assets/layout/footer.html')

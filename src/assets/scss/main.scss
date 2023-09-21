@@ -21,4 +21,34 @@
 // Layouts
 @import './layout/header';
 @import './layout/hero';
+@import './layout/experience';
+@import './layout/about';
+@import './layout/products.scss';
+@import './layout/news';
+@import './layout/categories';
 @import './layout/footer';
+
+.items-wrap {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 50px;
+	@media screen and (max-width: 768px) {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 20px;
+	}
+
+	padding-top: 92px;
+	padding-bottom: 82px;
+	@media screen and (max-width: 992px) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	&__left {
+		grid-column: 2 span;
+	}
+
+	&__right {
+		min-width: 300px;
+	}
+}

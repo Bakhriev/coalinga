@@ -20,6 +20,16 @@ body {
 	flex-grow: 1;
 }
 
+.visibility-hidden {
+	position: absolute !important;
+	top: -9999px !important;
+	left: -9999px !important;
+	height: 0 !important;
+	width: 0 !important;
+	opacity: 0 !important;
+	visibility: hidden !important;
+}
+
 // Container
 .container {
 	margin: 0 auto;
@@ -30,6 +40,13 @@ body {
 
 .disable-scroll {
 	overflow: hidden !important;
+}
+
+.title-2 {
+	color: $blue;
+	font-family: 'Lexend', serif;
+	font-weight: 700;
+	line-height: normal;
 }
 
 .border-bottom-line {

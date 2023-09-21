@@ -1,0 +1,57 @@
+.experience {
+	position: relative;
+	z-index: 1;
+	background: #1d3196;
+	padding: 26px 0;
+	@media screen and (max-width: 768px) {
+		padding: 15px 0;
+	}
+
+	// .experience__container
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		overflow-x: auto;
+		gap: 20px;
+	}
+
+	// .experience__item
+
+	&__item {
+		display: flex;
+		align-items: center;
+		flex-shrink: 0;
+		gap: 17px;
+	}
+
+	// .experience__number
+
+	&__number {
+		color: #fff;
+		font-family: 'Lexend', serif;
+		font-size: 55px;
+		font-weight: 700;
+		line-height: normal;
+		@media screen and (max-width: 992px) {
+			font-size: 30px;
+		}
+		@media screen and (max-width: 768px) {
+			font-size: 20px;
+		}
+	}
+
+	// .experience__text
+
+	&__text {
+		color: #fff;
+		font-family: 'Lexend', serif;
+		font-size: 25px;
+		font-weight: 500;
+		line-height: 1.04;
+		@media screen and (max-width: 992px) {
+			font-size: 18px;
+		}
+	}
+}
