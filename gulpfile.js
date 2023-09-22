@@ -41,6 +41,7 @@ const path = {
 		video: distPath + 'assets/video',
 		svg: distPath + 'assets/img/svg',
 		vendors: distPath + 'assets/vendors',
+		libs: distPath + 'assets/libs',
 		fonts: distPath + 'assets/fonts',
 	},
 	src: {
@@ -51,6 +52,7 @@ const path = {
 		video: srcPath + 'assets/video/**/*',
 		svg: srcPath + 'assets/img/svg/**/*.svg',
 		vendors: srcPath + 'assets/vendors/**/*.{css,js}',
+		libs: srcPath + 'assets/libs/**/*',
 		fonts: srcPath + 'assets/fonts/**/*',
 	},
 	clean: distPath,
@@ -159,7 +161,6 @@ function js() {
 				},
 			})
 		)
-		.pipe(webpack(require('./webpack.config')))
 		.pipe(dest(path.build.js))
 		.pipe(browserSync.reload({stream: true}))
 }
@@ -191,6 +192,12 @@ function vendors() {
 		.pipe(browserSync.reload({stream: true}))
 }
 
+function libs() {
+	return src(path.src.libs)
+		.pipe(dest(path.build.libs))
+		.pipe(browserSync.reload({stream: true}))
+}
+
 function fonts() {
 	return src(path.src.fonts)
 		.pipe(dest(path.build.fonts))
@@ -217,7 +224,7 @@ function prod(done) {
 
 const dev = series(
 	clean,
-	parallel(html, css, js, img, video, webpImg, svg, vendors, fonts),
+	parallel(html, css, js, img, video, webpImg, svg, vendors, libs, fonts),
 	serve
 )
 const build = series(
@@ -232,6 +239,7 @@ const build = series(
 		webpImg,
 		svg,
 		vendors,
+		libs,
 		fonts
 	)
 )
@@ -249,6 +257,7 @@ function watchFiles() {
 	watch([path.src.img], webp)
 	watch([path.src.svg], svg)
 	watch([path.src.vendors], vendors)
+	watch([path.src.libs], libs)
 	watch([path.src.fonts], fonts)
 }
 
@@ -263,6 +272,7 @@ exports.webpImg = webpImg
 exports.svg = svg
 exports.dev = dev
 exports.vendors = vendors
+exports.libs = libs
 exports.fonts = fonts
 exports.build = build
 exports.preview = preview

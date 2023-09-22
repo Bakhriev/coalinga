@@ -1,5 +1,5 @@
 const config = {
-	mode: 'production',
+	mode: 'development',
 	entry: {
 		index: './src/assets/js/main.js',
 	},

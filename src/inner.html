@@ -4,7 +4,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="./assets/libs/swiper/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="./assets/css/main.css" />
 		<title>Your Title</title>
 	</head>
 
@@ -260,7 +261,7 @@
 								</p>
 							</div>
 							<div class="article-tags">
-								<span>Tags:</span>
+								<span data-animate-up>Tags:</span>
 								<ul>
 									<li data-animate-up>
 										<a href="#">Tadalafil</a>
@@ -302,6 +303,9 @@
 			<!-- Footer -->
 			@include('assets/layout/footer.html')
 		</div>
-		<script type="module" src="assets/js/main.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+		<script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
+		<script src="./assets/js/main.js"></script>
 	</body>
 </html>
