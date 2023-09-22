@@ -29,3 +29,25 @@ inView('.items-wrap [data-animate]', info => {
 		{delay: stagger(0.5), duration: 1}
 	)
 })
+
+inView('.items-wrap [data-animate-up]', info => {
+	animate(
+		info.target,
+		{y: [50, 0], opacity: [0, 1]},
+		{delay: stagger(0.5), duration: 1}
+	)
+})
+
+const scrollTop = document.querySelector('.scroll-top')
+
+scrollTop.addEventListener('click', () => {
+	window.scrollTo(0, 0)
+})
+
+window.addEventListener('scroll', () => {
+	if (window.scrollY > 300) {
+		scrollTop.classList.add('active')
+	} else {
+		scrollTop.classList.remove('active')
+	}
+})

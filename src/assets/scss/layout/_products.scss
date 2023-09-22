@@ -113,20 +113,6 @@
 
 	&__price {
 		margin-bottom: 12px;
-		color: $red;
-		font-family: 'Lexend', serif;
-		font-size: 15px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: normal;
-		color: rgba(242, 23, 55, 0.5);
-		span {
-			color: $red;
-			opacity: 1;
-			font-size: 20px;
-			font-weight: 500;
-			color: $red;
-		}
 	}
 
 	// .products-card__link
@@ -158,5 +144,22 @@
 	.swiper-button-prev,
 	.swiper-button-next {
 		display: none;
+	}
+}
+
+.price-box {
+	color: $red;
+	font-family: 'Lexend', serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	color: rgba(242, 23, 55, 0.5);
+	span {
+		color: $red;
+		opacity: 1;
+		font-size: 20px;
+		font-weight: 500;
+		color: $red;
 	}
 }

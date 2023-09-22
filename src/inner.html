@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+	<!-- Head -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<title>Your Title</title>
+	</head>
+
+	<!-- Head -->
+
+	<body>
+		<div class="wrapper">
+			<div class="overlay"></div>
+			<button class="scroll-top">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="56"
+					height="56"
+					viewBox="0 0 56 56"
+					fill="none"
+				>
+					<rect opacity="0.1" width="56" height="56" rx="10" fill="#1D3196" />
+					<path
+						d="M34 30L28.5369 26L23 30"
+						stroke="#1D3196"
+						stroke-width="2"
+						stroke-miterlimit="10"
+					/>
+				</svg>
+			</button>
+
+			<header class="header header--static">
+				<div class="header__container container">
+					<!-- Logo -->
+					<a href="#" class="header__logo logo"
+						><img
+							width="210"
+							height="68"
+							src="./assets/img/logo.svg"
+							alt="logo"
+					/></a>
+					<!-- Logo -->
+
+					<div class="header__navigation">
+						<nav class="nav header__nav">
+							<ul class="nav__list">
+								<li>
+									<div class="dropdown" data-dropdown>
+										<button class="dropdown__btn">
+											<span>About Us</span>
+											<svg class="dropdown__icon">
+												<use
+													xlink:href="assets/img/svg/sprite.svg#arrow-bottom-icon"
+												></use>
+											</svg>
+										</button>
+										<ul class="dropdown__menu">
+											<li class="dropdown__item">
+												<a href="#" class="dropdown__link">Example</a>
+											</li>
+											<li class="dropdown__item">
+												<a href="#" class="dropdown__link">Example</a>
+											</li>
+											<li class="dropdown__item">
+												<a href="#" class="dropdown__link">Example</a>
+											</li>
+											<li class="dropdown__item">
+												<a href="#" class="dropdown__link">Example</a>
+											</li>
+											<li class="dropdown__item">
+												<a href="#" class="dropdown__link">Example</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="dropdown" data-dropdown>
+										<button class="dropdown__btn">
+											<span>Our Services</span>
+											<svg class="dropdown__icon">
+												<use
+													xlink:href="assets/img/svg/sprite.svg#arrow-bottom-icon"
+												></use>
+											</svg>
+										</button>
+										<ul class="dropdown__menu">
+											<li class="dropdown__item">
+												<a href="#" class="dropdown__link">Example</a>
+											</li>
+											<li class="dropdown__item">
+												<a href="#" class="dropdown__link">Example</a>
+											</li>
+											<li class="dropdown__item">
+												<a href="#" class="dropdown__link">Example</a>
+											</li>
+											<li class="dropdown__item">
+												<a href="#" class="dropdown__link">Example</a>
+											</li>
+											<li class="dropdown__item">
+												<a href="#" class="dropdown__link">Example</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="nav__link border-bottom-line"
+										>Patient Rights</a
+									>
+								</li>
+								<li>
+									<a href="#" class="nav__link border-bottom-line">News</a>
+								</li>
+								<li>
+									<a href="#" class="nav__link border-bottom-line"
+										>Contact Us</a
+									>
+								</li>
+							</ul>
+						</nav>
+						<div class="header__buttons">
+							<button class="btn header__btn">Live Chat Support</button>
+						</div>
+					</div>
+
+					<!-- Burger -->
+					<div class="burger">
+						<span></span>
+					</div>
+					<!-- Burger -->
+				</div>
+			</header>
+
+			<main class="main">
+				<div class="breadcrumb-position container">
+					@include('assets/layout/components/breadcrumb.html')
+				</div>
+				<section class="stories">
+					<div class="stories__container container">
+						<h1 class="stories__title title-2">
+							Association of California Healthcare Districts. US FDA postpones
+							decision to approve shot for young children by at least two
+							months, seeking more data.
+						</h1>
+						<div class="data">
+							<svg>
+								<use href="./assets/img/svg/sprite.svg#calendar-icon"></use>
+							</svg>
+							<span>September 13, 2023</span>
+						</div>
+					</div>
+				</section>
+				<div class="items-wrap container">
+					<div class="items-wrap__left">
+						<article class="article">
+							<h2 data-animate-up>What is a Healthcare District? H2</h2>
+							<p data-animate-up>
+								Having trust in your healthcare provider can mean many different
+								things for different people. It starts with great doctor-patient
+								relationships, state of the art equipment, easy access to care,
+								professionalism, respect for your privacy and service with a
+								smile. Best of all you don’t have to drive far for superior
+								healthcare!
+							</p>
+							<img
+								data-animate-up
+								src="./assets/img/content/inner/article.jpg"
+								alt="article"
+								class="article__img"
+							/>
+							<h2 data-animate-up>Numbered list - H2</h2>
+							<p data-animate-up>
+								Coalinga is committed to provide personalized, quality-oriented
+								healthcare and drugs through an ethically and fiscally
+								responsible service network, enhancing the health of the people
+								we serve.
+							</p>
+							<div data-animate-up class="numbered-list-wrapper">
+								<ul>
+									<li data-animate-up>
+										Coalinga is committed to provide personalized,
+										quality-oriented healthcare and drugs through an ethically
+										and fiscally responsible service network, enhancing the
+										health of the people we serve.
+									</li>
+									<li data-animate-up>
+										Having trust in your healthcare provider can mean many
+										different things for different people. It starts with great
+										doctor-patient relationships, state of the art equipment,
+										easy access to care, professionalism, respect for your
+										privacy and service with a smile. Best of all you don’t have
+										to drive far for superior healthcare!
+									</li>
+									<li data-animate-up>
+										Through the efforts of a highly qualified and dedicated
+										physician and employee staff, and through alliances with
+										other regional providers, Coalinga med center addresses the
+										health care needs of the residents of the City of Coalinga
+										and the surrounding area.
+									</li>
+								</ul>
+							</div>
+							<h3 data-animate-up>Unordered list - H3</h3>
+							<p data-animate-up>
+								Coalinga is committed to provide personalized, quality-oriented
+								healthcare and drugs through an ethically and fiscally
+								responsible service network, enhancing the health of the people
+								we serve.
+							</p>
+							<div class="unordered-list-wrapper">
+								<ul>
+									<li data-animate-up>
+										Having trust in your healthcare provider can mean many
+										different things for different people. It starts with great
+										doctor-patient relationships, state of the art equipment,
+										easy access to care, professionalism, respect for your
+										privacy and service with a smile. Best of all you don’t have
+										to drive far for superior healthcare!
+									</li>
+									<li data-animate-up>
+										Coalinga is committed to provide personalized,
+										quality-oriented healthcare and drugs through an ethically
+										and fiscally responsible service network, enhancing the
+										health of the people we serve.
+									</li>
+									<li data-animate-up>
+										Through the efforts of a highly qualified and dedicated
+										physician and employee staff, and through alliances with
+										other regional providers, Coalinga med center addresses the
+										health care needs of the residents of the City of Coalinga
+										and the surrounding area.
+									</li>
+								</ul>
+							</div>
+							<p data-animate-up>
+								Having trust in your healthcare provider can mean many different
+								things for different people. It starts with great doctor-patient
+								relationships, state of the art equipment, easy access to care,
+								professionalism, respect for your privacy and service with a
+								smile. Best of all you don’t have to drive far for superior
+								healthcare!
+							</p>
+							<div data-animate-up class="article-disclaimer">
+								<span>Disclaimer:</span>
+								<p>
+									A representative AWP (Average Wholesale Price) price or price
+									range is provided as reference price only. A range is provided
+									when more than one manufacturer's AWP price is available and
+									uses the low and high price reported by the manufacturers to
+									determine the range. The pricing data should be used for
+									benchmarking purposes only, and as such should not be used
+									alone to set or adjudicate any prices for reimbursement or
+									purchasing functions or considered to be an exact price for a
+									single product and/or manufacturer. Medi-Span expressly
+									disclaims all warranties of any kind or nature, whether
+									express or implied, and assumes no liability with respect to
+									accuracy of price or price range data published in its
+									solutions.
+								</p>
+							</div>
+							<div class="article-tags">
+								<span>Tags:</span>
+								<ul>
+									<li data-animate-up>
+										<a href="#">Tadalafil</a>
+									</li>
+									<li data-animate-up>
+										<a href="#">Antidepressants</a>
+									</li>
+									<li data-animate-up>
+										<a href="#">Canadian Pharmacy</a>
+									</li>
+									<li data-animate-up>
+										<a href="#">Drugs</a>
+									</li>
+									<li data-animate-up>
+										<a href="#">Female Viagra</a>
+									</li>
+									<li data-animate-up>
+										<a href="#">Healthy Living</a>
+									</li>
+									<li data-animate-up>
+										<a href="#">Cialis Professional</a>
+									</li>
+									<li data-animate-up>
+										<a href="#">Cialis</a>
+									</li>
+								</ul>
+							</div>
+						</article>
+					</div>
+					<div class="items-wrap__right">
+						@include('assets/layout/news.html')
+						@include('assets/layout/mentioned.html')
+						@include('assets/layout/categories.html')
+					</div>
+				</div>
+				@include('assets/layout/contact.html')
+			</main>
+
+			<!-- Footer -->
+			@include('assets/layout/footer.html')
+		</div>
+		<script type="module" src="assets/js/main.js"></script>
+	</body>
+</html>

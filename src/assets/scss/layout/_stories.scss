@@ -1,0 +1,35 @@
+.stories {
+	// .stories__container
+
+	&__container {
+	}
+
+	// .stories__title
+
+	&__title {
+		margin-bottom: 30px;
+		font-size: 40px;
+		@media screen and (max-width: 992px) {
+			font-size: 32px;
+		}
+		@media screen and (max-width: 768px) {
+			font-size: 22px;
+		}
+	}
+}
+
+.data {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: $blue;
+	font-family: 'Lexend', serif;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: normal;
+	opacity: 0.4;
+	svg {
+		width: 18px;
+		height: 18px;
+	}
+}

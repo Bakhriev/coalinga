@@ -18,6 +18,9 @@
 @import './components/burger';
 @import './components/dropdown';
 @import './components/checkbox';
+@import './components/breadcrumb';
+@import './components/article';
+@import './components/mentioned';
 
 // Layouts
 @import './layout/header';
@@ -28,6 +31,7 @@
 @import './layout/news';
 @import './layout/categories';
 @import './layout/contact';
+@import './layout/stories';
 @import './layout/footer';
 
 .items-wrap {
@@ -48,9 +52,17 @@
 
 	&__left {
 		grid-column: 2 span;
+		@media screen and (max-width: 375px) {
+			grid-column: 1 span;
+		}
 	}
 
 	&__right {
 		min-width: 300px;
 	}
+}
+
+.breadcrumb-position {
+	margin-top: 42px;
+	margin-bottom: 62px;
 }
