@@ -8,11 +8,11 @@ export const animateTitle = () => {
 	)
 }
 
-export const animateHeader = () => {
+export const leftToRight = (items, duration = 1, delay = 0) => {
 	animate(
-		'.header',
+		items,
 		{x: [-50, 0], opacity: [0, 1]},
-		{duration: 0.6, delay: 0.4}
+		{duration: duration, delay: delay}
 	)
 }
 
@@ -24,7 +24,7 @@ export const animateButtons = () => {
 	)
 }
 
-export const animateCircle = (items, duration, delay) => {
+export const animateCircle = (items, duration = 1, delay = 0) => {
 	animate(
 		items,
 		{clipPath: ['circle(0%)', 'circle(100%)']},
