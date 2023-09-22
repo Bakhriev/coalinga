@@ -17,6 +17,7 @@
 @import './components/overlay';
 @import './components/burger';
 @import './components/dropdown';
+@import './components/checkbox';
 
 // Layouts
 @import './layout/header';
@@ -26,6 +27,7 @@
 @import './layout/products.scss';
 @import './layout/news';
 @import './layout/categories';
+@import './layout/contact';
 @import './layout/footer';
 
 .items-wrap {
