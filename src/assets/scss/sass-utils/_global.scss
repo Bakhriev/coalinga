@@ -108,8 +108,30 @@ body {
 	right: 20px;
 	z-index: 25;
 	scale: 0;
+	fill: red;
+	&:active {
+		.scroll-top__bg {
+			scale: 0.97;
+		}
+		.scroll-top__line {
+			scale: 0.97;
+		}
+	}
+	@include hover {
+		.scroll-top__bg {
+			opacity: 0.3;
+		}
+	}
+
 	&.active {
 		opacity: 1;
 		scale: 1;
+	}
+	&__bg {
+		transition: opacity 200ms ease;
+		fill: #1d3196;
+	}
+	&__line {
+		stroke: #1d3196;
 	}
 }

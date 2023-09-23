@@ -1,39 +1,15 @@
 .hero {
-	position: relative;
 	padding-top: 190px;
 	@media screen and (max-width: 992px) {
 		padding-top: 120px;
 	}
 	padding-bottom: 80px;
-	background-color: #e8f3fd;
-	// .hero__container
-
-	&::before {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 400px;
-		height: 400px;
-
-		border-radius: 50%;
-		opacity: 0.8;
-		background: #fde8f7;
-		filter: blur(150px);
-	}
-	&::after {
-		content: '';
-		position: absolute;
-		top: 0;
-		right: 0;
-		width: 400px;
-		height: 400px;
-
-		border-radius: 50%;
-		opacity: 0.8;
-		background: #defff9;
-		filter: blur(150px);
-	}
+	// background-color: #e8f3fd;
+	background: linear-gradient(
+		25deg,
+		rgba(239, 234, 246, 1) 0%,
+		rgba(224, 251, 248, 1) 100%
+	);
 
 	&__container {
 	}
@@ -143,6 +119,10 @@
 		display: grid;
 		place-items: center;
 		background-color: $red;
+		transition: background-color 300ms ease-in-out;
+		@include hover {
+			background-color: rgb(250, 102, 34);
+		}
 	}
 
 	// .search-form__icon
@@ -208,9 +188,15 @@
 		font-size: 14px;
 		font-weight: 400;
 		line-height: normal;
-		transition: color 150ms ease;
+		transition: color 300ms ease;
+		svg {
+			transition: 300ms linear;
+		}
 		@include hover {
 			color: #222;
+			svg {
+				transform: translateX(5px);
+			}
 		}
 	}
 }

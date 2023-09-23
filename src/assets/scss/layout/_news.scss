@@ -24,6 +24,9 @@
 		gap: 32px;
 		li {
 			position: relative;
+			padding-left: 16px;
+			border-radius: 20px;
+
 			&::before {
 				content: '';
 				position: absolute;
@@ -34,7 +37,6 @@
 				border-radius: 50%;
 				background-color: $red;
 			}
-			padding-left: 16px;
 		}
 		a {
 			display: flex;
@@ -47,6 +49,10 @@
 				font-size: 17px;
 				font-weight: 500;
 				line-height: 1.3;
+				transition: color 150ms ease;
+				@include hover {
+					color: rgb(62, 126, 230);
+				}
 			}
 			div {
 				display: flex;

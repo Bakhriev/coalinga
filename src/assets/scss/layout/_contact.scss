@@ -1,6 +1,10 @@
 .contact {
 	padding: 62px 0;
-	background-color: #e9ebf5;
+	background: linear-gradient(
+		90deg,
+		rgba(239, 234, 246, 1) 0%,
+		rgba(224, 251, 248, 1) 100%
+	);
 	// .contact__container
 
 	&__container {
