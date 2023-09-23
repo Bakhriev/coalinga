@@ -36,7 +36,7 @@
 
 		top: calc(100% + 10px);
 		left: 50%;
-		transform: translateX(-50%) translateY(10px);
+		transform: translateX(-50%);
 		min-width: 130px;
 		display: flex;
 		flex-direction: column;
@@ -104,7 +104,7 @@
 		.dropdown__menu {
 			opacity: 1;
 			visibility: visible;
-			transform: translateX(-50%) translateY(0);
+			transform: translateX(-50%);
 		}
 		.dropdown__icon {
 			transform: rotate(-90deg);
