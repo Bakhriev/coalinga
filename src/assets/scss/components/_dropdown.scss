@@ -34,9 +34,9 @@
 	&__menu {
 		position: absolute;
 
-		top: calc(100% + 45px);
+		top: calc(100% + 10px);
 		left: 50%;
-		transform: translateX(-50%);
+		transform: translateX(-50%) translateY(10px);
 		min-width: 130px;
 		display: flex;
 		flex-direction: column;
@@ -53,7 +53,7 @@
 
 		opacity: 0;
 		visibility: hidden;
-		@include trans(opacity, visibility, top);
+		@include trans(opacity, visibility, transform);
 
 		@media screen and (max-width: 992px) {
 			position: relative;
@@ -104,7 +104,7 @@
 		.dropdown__menu {
 			opacity: 1;
 			visibility: visible;
-			top: calc(100% + 15px);
+			transform: translateX(-50%) translateY(0);
 		}
 		.dropdown__icon {
 			transform: rotate(-90deg);

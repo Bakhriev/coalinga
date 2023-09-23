@@ -133,6 +133,15 @@ const burgerMenu = () => {
 const dropdownInit = () => {
 	const allDropdowns = document.querySelectorAll('[data-dropdown]')
 
+	allDropdowns.forEach(drp => {
+		drp.addEventListener('mouseover', () => {
+			drp.classList.add('active')
+		})
+		drp.addEventListener('mouseleave', () => {
+			drp.classList.remove('active')
+		})
+	})
+
 	if (window.innerWidth > 992.98) {
 		document.addEventListener('click', e => {
 			let currentDropdown
