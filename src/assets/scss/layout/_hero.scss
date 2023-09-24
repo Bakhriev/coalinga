@@ -95,6 +95,9 @@
 	background: #fff;
 
 	padding: 12px 12px 12px 30px;
+	@media screen and (max-width: 768px) {
+		padding: 8px 12px 8px 18px;
+	}
 
 	display: flex;
 	align-items: center;
