@@ -52,6 +52,9 @@
 		li {
 			padding-left: 50px;
 			position: relative;
+			@media screen and (max-width: 768px) {
+				padding-left: 30px;
+			}
 
 			color: rgba(0, 0, 0, 0.6);
 			font-family: 'Lexend', serif;
@@ -65,6 +68,9 @@
 				position: absolute;
 				top: 0;
 				left: 0;
+				@media screen and (max-width: 768px) {
+					left: -10px;
+				}
 				width: 32px;
 				height: 32px;
 				border-radius: 7px;
@@ -150,6 +156,9 @@
 .article-disclaimer {
 	margin-bottom: 40px;
 	padding-left: 30px;
+	@media screen and (max-width: 768px) {
+		padding-left: 20px;
+	}
 	position: relative;
 	&::before {
 		content: '';

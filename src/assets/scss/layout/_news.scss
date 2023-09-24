@@ -1,5 +1,8 @@
 .news {
 	padding: 30px;
+	@media screen and (max-width: 768px) {
+		padding: 15px;
+	}
 	border-radius: 15px;
 	background: #fafcff;
 	// .news__inner

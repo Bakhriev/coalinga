@@ -137,6 +137,7 @@ function css() {
 			})
 		)
 		.pipe(sass())
+		.pipe(gcmq())
 		.pipe(
 			autoprefixer({
 				cascade: false,
